@@ -1,0 +1,26 @@
+WARNING! WARNING! WARNING! WARNING! WARNING! 
+
+This script is made for my own use, and it's really useful for me, but 
+I'm not a programmer and it uses 'rsync --delete' in some points, so 
+USE IT AT YOUR OWN RISK.
+
+
+PELIGRO! PELIGRO! PELIGRO! PELIGRO! PELIGRO! 
+
+Este escript me es muy útil y lo uso muy amenudo, pero en algunos
+puntos del programa usa el comando 'rsync --delete' el cual puede ser
+realmente peligroso, USALO BAJO TU PROPIA RESPONSABILIDAD.
+
+Este script emplea rsync para hacer copias de seguridad secuenciales
+(bsec=backup secuencial).
+
+El script coge EL CONTENIDO de la carpeta de origen y la copia en la 
+carpeta destino en una nueva carpeta con nombre la fecha actual.
+En la copia se hace uso de hard links con la carpeta con fecha más
+cercana a la actual.
+
+Su uso es: "./bsec.sh <carpeta de origen> <carpeta de destino>
+Donde la carpeta de origen es la carpeta de la que queremos hacer la copia de seguridad
+y la carpeta de destino contiene carpetas con fechas a las cuales se puede linkear
+la copia de seguridad que se va a hacer ahora.
+
